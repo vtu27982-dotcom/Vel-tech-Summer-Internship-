@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="upi.html">
+
+</head>
+<body>
+
+<div class="payment-box">
+    <h1>💳 Payment Details</h1>
+
+    <p><strong>Seat:</strong> <span id="seat"></span></p>
+
+    <label>Select Payment Method</label>
+
+    <select id="paymentMethod">
+        <option value="">Choose Payment Method</option>
+        <option>UPI</option>
+        <option>Credit Card</option>
+        <option>Debit Card</option>
+        <option>Net Banking</option>
+    </select>
+
+    <button onclick="makePayment()">Pay Now</button>
+</div>
+
+<script>
+document.getElementById("seat").innerHTML =
+localStorage.getItem("selectedSeat");
+
+function makePayment(){
+    let method = document.getElementById("paymentMethod").value;
+
+    if(method === ""){
+        alert("Please select a payment method!");
+        return;
+    }
+
+    alert("Payment Successful!");
+
+    window.location.href = "success.html";
+}
+</script>
+
+</body>
+</html>

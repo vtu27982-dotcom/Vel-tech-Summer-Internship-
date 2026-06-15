@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Successful</title>
+    <link rel="stylesheet" href="success.css">
+</head>
+<body>
+
+    <div class="success-box">
+
+        <h1>🎉 Booking Successful!</h1>
+
+        <p><strong>From:</strong> Chennai</p>
+
+        <p><strong>To:</strong> Bengaluru</p>
+
+        <p><strong>Date:</strong>
+            <span id="date"></span>
+        </p>
+
+        <p><strong>Seat Number:</strong>
+            <span id="seat"></span>
+        </p>
+
+        <p><strong>Payment Status:</strong> ✅ Paid Successfully</p>
+
+        <h3>🚌 Thank You For Booking With BusBooking</h3>
+
+        <p>Have a Safe Journey!</p>
+
+        <a href="index.html">
+            <button>🏠 Back to Home</button>
+        </a>
+
+    </div>
+
+    <script>
+        document.getElementById("date").innerHTML =
+        localStorage.getItem("journeyDate") || "15-06-2026";
+
+        document.getElementById("seat").innerHTML =
+        localStorage.getItem("selectedSeat") || "A1";
+    </script>
+
+</body>
+</html>

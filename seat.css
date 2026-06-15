@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    text-align:center;
+    padding:20px;
+}
+
+h1{
+    margin-bottom:20px;
+    color:#007bff;
+}
+
+.seat-container{
+    display:grid;
+    grid-template-columns:repeat(4, 60px);
+    gap:15px;
+    justify-content:center;
+    margin:30px auto;
+}
+
+.seat{
+    width:60px;
+    height:60px;
+    background:#28a745;
+    color:white;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.seat:hover{
+    transform:scale(1.1);
+}
+
+.booked{
+    background:#dc3545;
+    cursor:not-allowed;
+}
+
+.selected{
+    background:#ffc107;
+    color:black;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+.legend{
+    margin-top:20px;
+}
+
+.legend span{
+    display:inline-block;
+    margin:0 10px;
+    padding:8px 15px;
+    border-radius:5px;
+    color:white;
+}
+
+.available{
+    background:#28a745;
+}
+
+.occupied{
+    background:#dc3545;
+}
+
+.chosen{
+    background:#ffc107;
+    color:black;
+}

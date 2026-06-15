@@ -1,0 +1,45 @@
+body{
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#36d1dc,#5b86e5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+
+.payment-box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    width:350px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+h1{
+    color:#333;
+    margin-bottom:20px;
+}
+
+select{
+    width:100%;
+    padding:10px;
+    margin:15px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#218838;
+}
